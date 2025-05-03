@@ -1,0 +1,12 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sim_1/new/tb_async_fifo.sv,1745194292,systemVerilog,,,,tb_async_fifo,,uvm,,,,,,
+C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/afifo.sv,1745146491,systemVerilog,,C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/fifo_rd_ptr.sv,,afifo,,uvm,,,,,,
+C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/fifo_rd_ptr.sv,1745182083,systemVerilog,,C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/fifo_wr_ptr.sv,,fifo_rd_ptr,,uvm,,,,,,
+C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/fifo_wr_ptr.sv,1745188709,systemVerilog,,C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/ram.sv,,fifo_wr_ptr,,uvm,,,,,,
+C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/ram.sv,1745191492,systemVerilog,,C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/rd_ptr_sync.sv,,ram,,uvm,,,,,,
+C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/rd_ptr_sync.sv,1745016012,systemVerilog,,C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/write_ptr_sync.sv,,rd_ptr_sync,,uvm,,,,,,
+C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/write_ptr_sync.sv,1744466544,systemVerilog,,C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sim_1/new/tb_async_fifo.sv,,write_ptr_sync,,uvm,,,,,,

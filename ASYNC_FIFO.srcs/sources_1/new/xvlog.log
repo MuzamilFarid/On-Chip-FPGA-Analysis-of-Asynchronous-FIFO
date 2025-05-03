@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/ram.sv" into library work
+INFO: [VRFC 10-311] analyzing module ram
+ERROR: [VRFC 10-4982] syntax error near 'input' [C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/ram.sv:41]
+ERROR: [VRFC 10-8549] SystemVerilog keyword 'input' used in incorrect context [C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.srcs/sources_1/new/ram.sv:41]

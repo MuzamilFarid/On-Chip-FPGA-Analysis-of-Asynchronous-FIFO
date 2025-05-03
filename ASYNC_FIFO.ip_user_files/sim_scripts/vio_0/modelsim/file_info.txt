@@ -1,0 +1,4 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../../Xilinx-2022.1/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../ASYNC_FIFO.gen/sources_1/ip/vio_0/hdl/verilog"incdir="../../../../ASYNC_FIFO.gen/sources_1/ip/vio_0/hdl"
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../Xilinx-2022.1/Vivado/2022.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../ASYNC_FIFO.gen/sources_1/ip/vio_0/hdl/verilog"incdir="../../../../ASYNC_FIFO.gen/sources_1/ip/vio_0/hdl"
+vio_0.v,verilog,xil_defaultlib,../../../../ASYNC_FIFO.gen/sources_1/ip/vio_0/sim/vio_0.v,incdir="../../../../ASYNC_FIFO.gen/sources_1/ip/vio_0/hdl/verilog"incdir="../../../../ASYNC_FIFO.gen/sources_1/ip/vio_0/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

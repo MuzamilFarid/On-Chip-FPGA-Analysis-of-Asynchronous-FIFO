@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu May  1 15:19:30 2025
+# Process ID: 3684
+# Current directory: C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: C:/CoraZ7-Projects/ASYNC_FIFIO/ASYNC_FIFO/ASYNC_FIFO.runs/clk_wiz_0_synth_1\vivado.jou
+# Running On: LAPTOP-D6I6FVV9, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 16951 MB
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1275.250 ; gain = 24.859
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP clk_wiz_0, cache-ID = b397f17293c08aa4.
+INFO: [Common 17-206] Exiting Vivado at Thu May  1 15:19:47 2025...
