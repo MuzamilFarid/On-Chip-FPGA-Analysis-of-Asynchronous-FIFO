@@ -6,7 +6,7 @@ The Design being analysed is the Asynchronous FIFO taken from another Public Git
 
 ## System Block Diagram
 
-![BD](AFIFO-BD.svg)
+![BD](images/AFIFO-BD.svg)
 
 The design takes system clock (125 MHz) input from on board generated clock arriving on pin H16 (of CoraZ7), Please refer the CoraZ7 constraints file https://github.com/Digilent/digilent-xdc/blob/master/Cora-Z7-07S-Master.xdc for the pinout of the FPGA.
 # Clock Generators
@@ -48,42 +48,42 @@ The design is synthesized for Zynq7000 SoC, Below are the resource usage, the fo
 
 ## Reseource Utilization (including OOC modules)
 
-![util_chart](util-full-design.png)
+![util_chart](images/util-full-design.png)
 
 ## Reseource Utilization with Hierarchy (including OOC modules)
 
-![ooc_util](reseource_ooc.png)
+![ooc_util](images/reseource_ooc.png)
 
 
 Due to asynchronous nature of the generated clocks, timing constraints set_clock_groups were applied to avoid timing between the write and read domains and to avoid timing failure
 The report clock interaction shows the following diagram indicating a relationship between clocks weather path between the domains were timed or untimed and weather timing met between domains or not. As an example timing path between the clocks clk_out1_clk_wiz_0 and clk_out2_clk_wiz_0 is shown in blue which shows partial false path as the applied timing constraint ensures paths between these two clock domains are ignored in the timing analysis
 
-![rci](report_clock_interaction.png)
+![rci](images/report_clock_interaction.png)
 
 ## Synthesized Schematic
 
-![scm1](schematic-afifo-1.png)
-![scm2](schematic-afifo-2.png)
-![scm3](schematic-afifo-3.png)
+![scm1](images/schematic-afifo-1.png)
+![scm2](images/schematic-afifo-2.png)
+![scm3](images/schematic-afifo-3.png)
 
 # Implementation
 
 The implemented design is shown as below
 
-![impl](post-implementation-die.png)
+![impl](images/post-implementation-die.png)
 
 ## Resource Utilization (post implementation)
-![pimpl](post-implemented-util.png)
+![pimpl](images/post-implemented-util.png)
 
 # Real time ILA Debug
 
 The following waveform shows ILA debug window in Vivado Hardware manager where a write operation in the Asynchronous FIFO can be observed as soon as write enable is activated and write reset is driven low. The full flag asserts when the FIFO is completely full
 
-![fifiila](ILA-FIFO-Write.png)
+![fifiila](images/ILA-FIFO-Write.png)
 
 The following waveform shows when read operation starts by enabling read enable signal and by driving read reset to low, a read data can be seen on the read data bus and empty flag asserts indicating FIFO is empty again
 
-![fiforeadila](ILA-FIFO-read.png)
+![fiforeadila](images/ILA-FIFO-read.png)
 
 
 
