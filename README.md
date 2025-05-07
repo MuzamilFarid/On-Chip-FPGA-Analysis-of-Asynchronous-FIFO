@@ -48,6 +48,10 @@ The design is synthesized for Zynq7000 SoC, Below are the resource usage, the fo
 
 ## Reseource Utilization (including OOC modules)
 
+![util_chart](util-full-design.png)
+
+## Reseource Utilization with Hierarchy (including OOC modules)
+
 ![ooc_util](reseource_ooc.png)
 
 
