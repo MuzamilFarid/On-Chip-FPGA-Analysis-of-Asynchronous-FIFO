@@ -30,6 +30,7 @@ VIO_Rd is used to control the read enable of the Asynchronous FIFO and read rese
 
 # Synthesis
 The design is synthesized for Zynq7000 SoC, Below are the resource usage, the following utilization is of top level excluding the OOC run modules such as VIO, ILA, Clocking wizard
+
 | Site Type                  | Used | Fixed | Prohibited | Available | Util% |
 |----------------------------|------|-------|------------|-----------|--------|
 | **Slice LUTs\***           |   38 |     0 |          0 |     14400 |  0.26% |
@@ -44,40 +45,41 @@ The design is synthesized for Zynq7000 SoC, Below are the resource usage, the fo
 | **F8 Muxes**               |    0 |     0 |          0 |      4400 |  0.00% |
 
 
-The total resource utilization including the OOC run modules is 
+
+## Reseource Utilization (including OOC modules)
+
 ![ooc_util](reseource_ooc.png)
 
 
-
-Due to asynchronous nature of the generated clocks, timing constraints set_clock_groups were applied to avoid timing between the write and read domains and to avoid timing failure.
-
-The report clock interaction shows the following diagram indicating a relationship between clocks weather path between the domains were timed or untimed and weather timing met between domains or not.
+Due to asynchronous nature of the generated clocks, timing constraints set_clock_groups were applied to avoid timing between the write and read domains and to avoid timing failure
+The report clock interaction shows the following diagram indicating a relationship between clocks weather path between the domains were timed or untimed and weather timing met between domains or not. As an example timing path between the clocks clk_out1_clk_wiz_0 and clk_out2_clk_wiz_0 is shown in blue which shows partial false path as the applied timing constraint ensures paths between these two clock domains are ignored in the timing analysis
 
 ![rci](report_clock_interaction.png)
 
-The synthesized schematic is shown as below 
+## Synthesized Schematic
 
-![scm](schematic-afifo1.png)
-![scm](schematic-afifo2.png)
-![scm](schematic-afifo3.png)
+![scm1](schematic-afifo-1.png)
+![scm2](schematic-afifo-2.png)
+![scm3](schematic-afifo-3.png)
 
 # Implementation
 
 The implemented design is shown as below
-![impl](implemented-afifo.png)
 
-The resource utilization post implementation is shown as below, The final LUT count is reduced after the optimizations run by Vivado in the implementation stage
+![impl](post-implementation-die.png)
 
-![impl](implemented-util.png)
-
+## Resource Utilization (post implementation)
+![pimpl](post-implemented-util.png)
 
 # Real time ILA Debug
 
 The following waveform shows ILA debug window in Vivado Hardware manager where a write operation in the Asynchronous FIFO can be observed as soon as write enable is activated and write reset is driven low. The full flag asserts when the FIFO is completely full
-![impl](implemented-util.png)
+
+![fifiila](ILA-FIFO-Write.png)
 
 The following waveform shows when read operation starts by enabling read enable signal and by driving read reset to low, a read data can be seen on the read data bus and empty flag asserts indicating FIFO is empty again
-![impl](implemented-util.png)
+
+![fiforeadila](ILA-FIFO-read.png)
 
 
 
